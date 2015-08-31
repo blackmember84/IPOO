@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int array[]={0,1,2,3,4,5,6,7,8,9};
+	int a;
+	int b=0;
+	cin>>a;
+	for (int x=0; x<=10; x++) {
+		if (a==array[x]){
+			b++;
+		} 
+	}
+	if (b!=0) {
+		cout<<"esta dentro del array"<<"\n";
+	}else{
+		cout<<"no esta dentro del array"<<"\n";
+	}
+	return 0;
+}
+
+		
+	
