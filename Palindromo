@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int a;
+	cin>>a;
+	int b=a;
+	char agg[a];
+	int cont=0;
+	for(int i=0;i<a;i++){
+		cin>>agg[i];
+	}
+	for(int i=0;i<=a;i++){
+		if(agg[i]==agg[b-1]){
+			cont++;
+		}
+		b--;
+	}
+	if(cont==a){
+	cout<<"Es palíndrome"<<"\n";
+	}
+	else{
+	cout<<"no es"<<"\n";
+	}
+											
+	return 0;
+}
