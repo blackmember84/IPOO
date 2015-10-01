@@ -1,0 +1,47 @@
+#include "Vector.h"
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	Vector vec1;
+	vec1.start.x = 0;
+	vec1.start.y = 0;
+	
+	vec1.end.x = 5;
+	vec1.end.y = 5;
+
+	double distance = vec1.distance();
+	vec1.print(); 
+	cout<<"la longitud de vector es: "<<distance << endl;
+}
+-------------------------------MAIN-------------------------------------
+
+class Point{
+	public:
+		double x,y;  
+};
+-------------------------------POINT-------------------------------------
+#include "Vector.h"
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+double Vector::distance(){
+	return sqrt(pow((start.x - end.x),2) + pow((start.y - end.y),2));
+}
+
+void Vector::print(){
+	cout<<"el punto de incio es: ("<<start.x<<","<<start.y<<")"<<endl<<"el punto final es: ("<<end.x<<","<<end.y<<")"<<endl;
+}	
+-----------------------------------METODOS-------------------------------------
+//vector.h - header file
+#include "point.h"
+class Vector{
+	public:
+		Point start, end;
+		double distance();
+		void print();
+};
+----------------------------------------VECTOR.H-----------------------------------
