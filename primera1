@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int crearMatrices(int _x,int _y){
+	cout<<"ingrese los valores por fila"<<endl;
+	int mat[_x][_y];
+	for(int i=0; i<_x; i++){
+		for(int j=0; j<_y; j++){
+			int a;
+			cin>>a;
+			mat[i][j]=a;
+		}
+	}
+	for (int i=0;i<_x;i++){
+		string n=" ";
+		for(int j=0;j<_y;j++){
+			cout<<*mat[i][j]<<n
+	}
+}
+
+int main(){
+	int x,y;
+	int matriz1;
+	cout<<"tamaño matriz: "<<endl;
+	cin>>x;
+	cin>>y;
+	matriz1=crearMatrices(x,y);
+}
